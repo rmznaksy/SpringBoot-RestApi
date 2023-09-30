@@ -1,14 +1,13 @@
 package com.spring.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Generated;
-import org.hibernate.annotations.GeneratedColumn;
+import lombok.Data;
+
 
 @Entity
 @Table(name = "KULLANICILAR")
-public class User {
+@Data
+public class User extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
