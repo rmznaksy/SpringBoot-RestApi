@@ -9,7 +9,7 @@ import java.util.Date;
 @MappedSuperclass
 @Data
 public class BaseEntity implements Serializable {
-    private Date createDate;
+    private Date createdAt;
     private String createBy;
     private Date updatedAt;
     private String updateBy;
